@@ -18,17 +18,6 @@ module.exports = {
 
   name: Env.get('APP_NAME', 'AdonisJs'),
 
-  /*
-  |--------------------------------------------------------------------------
-  | App Key
-  |--------------------------------------------------------------------------
-  |
-  | App key is a randomly generated 16 or 32 characters long string required
-  | to encrypted cookies, sessions and other sensitive data.
-  |
-  */
-  appKey: Env.getOrFail('APP_KEY'),
-
   http: {
     /*
     |--------------------------------------------------------------------------
