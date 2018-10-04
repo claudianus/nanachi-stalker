@@ -1,7 +1,12 @@
 ## What is Nanachi-stalker
 This is a node.js fullstack web application that stalks nanachi
+
+## This is what Nanachi looks like
+<img src="https://s.put.re/YHhnnwi.jpg" alt="nanachi thinking" width="200px">
+
 ## How to install and host on your server (Ubuntu 18.04)
 Install node.js if you haven't installed node.js yet
+
 ```bash
 # https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
 $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
