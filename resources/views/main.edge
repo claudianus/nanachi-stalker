@@ -22,7 +22,13 @@
     <section id="photos">
       @each(image in images)
       <a href="{{image.url}}" target="_blank">
-        <img src="{{image.img}}" class="my-1 shadow-sm rounded" onerror="this.style.display='none'">
+      <img src=
+      @if(getEnv('USE_IMAGE_PROXY') === 'true')
+      "https://images.weserv.nl/?url={{image.img}}"
+      @else
+      "{{image.img}}"
+      @endif
+      class="my-1 shadow-sm rounded" onerror="this.style.display='none'">
       </a>
       @endeach
     </section>

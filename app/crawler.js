@@ -11,7 +11,7 @@ setInterval(async () => {
 }, 60000)
 
 async function crawl () {
-    images = await google.img(Env.get('SEARCH_QUERY', 'nanachi filetype:gif'))
+    images = await google.img(Env.get('SEARCH_QUERY', 'nanachi made in abyss'))
     console.log('Image Updated!')
 }
 
