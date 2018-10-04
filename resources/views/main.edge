@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,10 +8,21 @@
   {{ style('style') }}
 </head>
 <body>
+    @if(images.length === 0)
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-md-6">
+          <div class="alert alert-primary" role="alert" id="message">
+              Our stalker could not find nanachi! Please refresh later!
+          </div>
+        </div>
+      </div>
+    </div>   
+    @endif
     <section id="photos">
       @each(image in images)
       <a href="{{image.source}}" target="_blank">
-        <img src="{{image.preview_url}}" class="my-1 shadow-sm rounded">
+        <img src="{{image.preview_url}}" class="my-1 shadow-sm rounded" onerror="this.style.display='none'">
       </a>
       @endeach
     </section>
