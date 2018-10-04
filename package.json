@@ -21,7 +21,7 @@
     "@adonisjs/fold": "^4.0.9",
     "@adonisjs/framework": "^5.0.9",
     "@adonisjs/ignitor": "^2.0.8",
-    "kaori": "^1.2.0"
+    "google-parser": "^2.0.4"
   },
   "devDependencies": {},
   "autoload": {
