@@ -31,7 +31,6 @@ Then install dependencies
 
 ```bash
 $ npm install
-$ node ace migration:run --force
 ```
 
 and start the app (server)
